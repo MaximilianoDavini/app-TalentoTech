@@ -1,0 +1,17 @@
+:root {
+    --ink-black: #0d1b2aff;
+    --prussian-blue: #1b263bff;
+    --dusk-blue: #415a77ff;
+    --dusty-denim: #778da9ff;
+    --alabaster-grey: #e0e1ddff;
+    }
+    
+    main {
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+      }

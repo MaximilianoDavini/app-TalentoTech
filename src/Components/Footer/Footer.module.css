@@ -1,0 +1,20 @@
+:root {
+--ink-black: #0d1b2aff;
+--prussian-blue: #1b263bff;
+--dusk-blue: #415a77ff;
+--dusty-denim: #778da9ff;
+--alabaster-grey: #e0e1ddff;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    gap: 5px;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid var(--dusty-denim);
+    background-color: var(--prussian-blue);
+}

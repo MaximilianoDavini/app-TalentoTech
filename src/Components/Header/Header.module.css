@@ -1,0 +1,32 @@
+:root {
+--ink-black: #0d1b2aff;
+--prussian-blue: #1b263bff;
+--dusk-blue: #415a77ff;
+--dusty-denim: #778da9ff;
+--alabaster-grey: #e0e1ddff;
+}
+
+.headerStyle {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    height: auto;
+    gap: 5px;
+    margin: 10px;
+    border: 2px solid var(--dusty-denim);
+    background-color: var(--prussian-blue);
+}
+
+nav {
+    background-color: transparent;
+    margin: 10px;
+}
+
+.logoHeader{
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+font-weight: bolder;
+font-size: 30px;
+color: var(--alabaster-grey);
+text-shadow: 2px 0 10px var(--dusty-denim);
+}

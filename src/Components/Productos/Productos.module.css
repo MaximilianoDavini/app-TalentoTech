@@ -1,0 +1,20 @@
+:root {
+    --ink-black: #0d1b2aff;
+    --prussian-blue: #1b263bff;
+    --dusk-blue: #415a77ff;
+    --dusty-denim: #778da9ff;
+    --alabaster-grey: #e0e1ddff;
+    }
+
+    .productoContainer {
+        background-color: var(--dusk-blue);
+        color: var(--alabaster-grey);
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:space-around;
+        align-items: center;
+        border: 2px solid black;
+        height: 150px;
+        width: 200px;
+      }

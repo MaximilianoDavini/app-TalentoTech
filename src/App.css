@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--ink-black);
+  color: var(--alabaster-grey);
+  --ink-black: #0d1b2aff;
+  --prussian-blue: #1b263bff;
+  --dusk-blue: #415a77ff;
+  --dusty-denim: #778da9ff;
+  --alabaster-grey: #e0e1ddff;
+  font-family: Verdana;
+  font-size: small;
+  }
+  
+  h4, p {
+    background-color: transparent;
+  }
+
+a {
+  background-color: transparent;
+  text-decoration: none;
+  margin: 10px;
+}
+
+a:hover {
+  background-color: transparent;
+  text-decoration: none;
+  text-shadow: 5px 5px 5px var(--alabaster-grey);
+  margin: 10px;
+}

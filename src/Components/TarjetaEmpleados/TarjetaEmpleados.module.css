@@ -1,0 +1,27 @@
+.moduloCard {
+    height: auto;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.empleadosCard {
+    height: auto;
+    width: 100%;
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--prussian-blue);
+    border: 2px solid var(--dusty-denim);
+    gap: 10px;
+    padding: 5px;
+    margin: 2px;
+}
+
+img {
+    height: 50px;
+    width: 50px;
+    background-color: transparent;
+}
