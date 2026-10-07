@@ -1,0 +1,7 @@
+[
+        {"nombre": "HP DeskJet 2375", "detalle": "Impresora multifunción a chorro de tinta, color", "stock": 18, "precio": 85000},
+        {"nombre": "Epson EcoTank L3250", "detalle": "Multifunción con sistema de tanque de tinta continuo, WiFi", "stock": 9, "precio": 210000},
+        {"nombre": "Canon Pixma G3110", "detalle": "Impresora multifunción color con tanque de tinta integrado", "stock": 22, "precio": 195000},
+        {"nombre": "Brother HL-L2350DW", "detalle": "Impresora láser monocromática, dúplex automático, WiFi", "stock": 7, "precio": 175000}
+
+]
