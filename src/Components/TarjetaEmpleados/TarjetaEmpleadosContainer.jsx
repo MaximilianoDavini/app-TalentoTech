@@ -3,7 +3,8 @@ import Style from "../TarjetaEmpleados/TarjetaEmpleados.module.css"
 import TarjetaEmpleados from "./TarjetaEmpleados";
 function TarjetaEmpleadosContainer () {
     const [Listado, SetListado] = useState([]);
-    const url = "/Empleados.json";
+    // const url = "/Empleados.json"; // asi lo dejo para local
+    const url = `${import.meta.env.BASE_URL}Empleados.json`; //asi para github pages
     useEffect( () => {
         async function ObtenerEmpleados() {
     try {
@@ -16,7 +17,7 @@ function TarjetaEmpleadosContainer () {
     }
     ObtenerEmpleados();
  },[]);
- 
+
 return (
     <div className={Style.moduloCard}>
         {
