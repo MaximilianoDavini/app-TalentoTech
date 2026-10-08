@@ -16,19 +16,7 @@ function TarjetaEmpleadosContainer () {
     }
     ObtenerEmpleados();
  },[]);
-//     return (
-//         <>
-//         {
-//         Listado.map(
-//             (Lista, index) => (
-//                 <TarjetaEmpleados key={index}
-//                  id={Lista.id} nombre={Lista.nombre} email={Lista.email} puesto={Lista.puesto}/>
-//             )
-//         )
-//     }
-//     </>
-//     );
-  //PREVIO HECHO  
+ 
 return (
     <div className={Style.moduloCard}>
         {

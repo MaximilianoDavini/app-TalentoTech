@@ -4,7 +4,8 @@ import { useEffect, useState } from "react";
 function ListadoProductos()
 {
 const [ProductosArray, setProductosArray] = useState([]);
-const url = "/Productos.json";
+// const url = "/Productos.json"; // asi queda para local
+const url = `${import.meta.env.BASE_URL}Productos.json`; //asi queda para githb pages
 useEffect(
     () => {
     async function Api() {
