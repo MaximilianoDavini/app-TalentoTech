@@ -4,20 +4,20 @@
         "nombre": "Santiago",
         "email": "Santiado@TalentoTech.com",
         "puesto": "CEO",
-        "img": "/img/1.png"
+        "img": "img/1.png"
     },
     {
         "id": 2,
         "nombre": "Juan",
         "email": "Juan@TalentoTech.com",
         "puesto": "PM",
-        "img": "/img/2.png"
+        "img": "img/2.png"
     },
     {
         "id": 3,
         "nombre": "Maximiliano",
         "email": "Maximiliano@TalentoTech.com",
         "puesto": "Developer",
-        "img": "/img/3.png"
+        "img": "img/3.png"
     }
 ]
