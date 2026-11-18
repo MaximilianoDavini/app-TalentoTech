@@ -1,6 +1,6 @@
 import React from "react";
 
-function FormularioProducto ({DatosForm,manejarCambio, manejarEnvio}) {
+function FormularioProducto ({DatosForm,manejarCambio, manejarEnvio, manejarCambioImagen}) {
     const formStyle = {
         display: 'flex',
         flexDirection: 'column',
@@ -33,10 +33,10 @@ function FormularioProducto ({DatosForm,manejarCambio, manejarEnvio}) {
             <label htmlFor="stock">Stock del Producto</label>
             <input type="number" name="stock" onChange={manejarCambio} />
          </div>
-        {/*<div>
+        <div>
             <label htmlFor="">Imagen del Producto</label>
-            <input type="file" onChange={manejarCambio} />
-        </div> */}
+            <input type="file" onChange={manejarCambioImagen} />
+        </div>
         <button type="submit">Guardar producto</button>
     </form>        
     );

@@ -1,6 +1,8 @@
 // import Productos from "../ListadoProductos/Productos.json";
+import { Link } from "react-router-dom";
 import MostrarProductos from "../ListadoProductos/MostrarProductos";
 import { useEffect, useState } from "react";
+
 function ListadoProductos()
 {
 const [ProductosArray, setProductosArray] = useState([]);
@@ -29,9 +31,11 @@ useEffect(
                     (Producto,index) => ( 
                     <MostrarProductos 
                     key={index}
+                    id={Producto.id}
                     nombre={Producto.nombre}
                     detalle={Producto.detalle}
                     stock={Producto.stock}
+                    imagen={Producto.imagen}
                     precio={Producto.precio}
                     />
                     )
