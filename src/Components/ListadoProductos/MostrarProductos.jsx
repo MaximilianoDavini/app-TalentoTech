@@ -5,6 +5,17 @@ import Contador from "../Contador/Contador";
 import Favorito from "../Favorito/Favorito";
 
 function MostrarProductos({ id, nombre, detalle, stock, precio, imagen }) {
+
+    const producto = { id, nombre, precio, stock, imagen };
+    const [cantidad, setCantidad] = useState(0);
+    const { addToCart } = useCart(); // Traemos la función del contexto
+    
+    const handleAddToCart = () => {
+         addToCart(producto, cantidad);
+         alert(`Agregaste ${cantidad} unidades de ${nombre} al carrito.`);
+        };
+    
+
     return (
         <div className={styles.productoContainer}>
             <Favorito />
@@ -16,6 +27,8 @@ function MostrarProductos({ id, nombre, detalle, stock, precio, imagen }) {
             </Link>
             <p>Detalle: {detalle}</p>
             <p>Stock: {stock}</p>
+            <Link to={`/producto/${producto.id}`}>Ver detalle</Link>
+            <button onClick={handleAddToCart}> Agregar {cantidad} al carrito </button>
             <Contador />
         </div>
     );
