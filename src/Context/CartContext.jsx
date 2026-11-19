@@ -1,4 +1,4 @@
-import React, { useState, useContext, createContext, Children } from 'react';
+import React, { useState, useContext, createContext } from 'react';
 export const CartContext = createContext();
 //Hook personalizado
 export const useCart = () => {
@@ -12,7 +12,7 @@ export const useCart = () => {
 
 //Creamos el provider y sus funciones
 
-export const CartProvider = ({Children}) => { //A
+export const CartProvider = ({ children }) => { //A
     const [cart, setCart] = useState([]);
     const addToCart = (producto, cantidad) => {
     const itemInCart = cart.find(item => item.id === producto.id);
@@ -49,7 +49,7 @@ const getTotalCart = () => {
 // Retornamos el provider
 return (
 <CartContext.Provider value = { {cart, addToCart, clearCart, getCantidadCart, getTotalCart} } >
-    {Children}
+    {children}
 </CartContext.Provider>
 );
 

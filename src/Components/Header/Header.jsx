@@ -4,8 +4,8 @@ import {Link} from "react-router-dom";
 import { useCart } from '../../Context/CartContext';
 
 function Header () {
-    const { getCantidadCart } = useCart();
-    const totalItems = getTotalCart();
+    const  {getCantidadCart} = useCart();
+    const totalItems = getCantidadCart();
     return (
     <div className={Style.headerStyle}>
     <p className={Style.logoHeader}>MUNDO IMPRESORAS</p>        

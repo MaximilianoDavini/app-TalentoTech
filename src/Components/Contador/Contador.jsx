@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function Contador () {
+function Contador({ cantidad, setCantidad, stock }) {
     
     const [contador, setContador] = useState(0);
     
@@ -21,9 +21,10 @@ return (
         gap:"5 px",
         background:"transparent"
     }}>
-    <button onClick={resProducto}>-</button>
-    <p>{contador}</p>
-    <button onClick={sumProducto}>+</button>
+        <button onClick={() => setCantidad(cantidad - 1)} disabled={cantidad <= 0}>-</button>
+        <hr />
+        <span>{cantidad}</span>
+        <button onClick={() => setCantidad(cantidad + 1)} disabled={cantidad >= stock}>+</button>
     </div>
 )
 

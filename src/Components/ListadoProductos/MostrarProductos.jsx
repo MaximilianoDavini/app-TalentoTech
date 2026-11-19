@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import styles from "../ListadoProductos/Productos.module.css";
 import Contador from "../Contador/Contador";
 import Favorito from "../Favorito/Favorito";
+import { useCart } from "../../Context/CartContext";
 
 function MostrarProductos({ id, nombre, detalle, stock, precio, imagen }) {
 
@@ -11,8 +12,10 @@ function MostrarProductos({ id, nombre, detalle, stock, precio, imagen }) {
     const { addToCart } = useCart(); // Traemos la función del contexto
     
     const handleAddToCart = () => {
+        if (cantidad === 0) return;
          addToCart(producto, cantidad);
          alert(`Agregaste ${cantidad} unidades de ${nombre} al carrito.`);
+         setCantidad(0);
         };
     
 
@@ -28,8 +31,8 @@ function MostrarProductos({ id, nombre, detalle, stock, precio, imagen }) {
             <p>Detalle: {detalle}</p>
             <p>Stock: {stock}</p>
             <Link to={`/producto/${producto.id}`}>Ver detalle</Link>
+            <Contador cantidad={cantidad} setCantidad={setCantidad} stock={stock} />
             <button onClick={handleAddToCart}> Agregar {cantidad} al carrito </button>
-            <Contador />
         </div>
     );
 }

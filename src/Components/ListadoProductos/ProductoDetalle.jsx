@@ -14,7 +14,7 @@ fetch('/productos.json')
         const productoEncontrado = data.find(p => p.id === parseInt(id));
         setProducto(productoEncontrado);
     })
-    .catch(error => console.error("Error al realizar la carga del producto", error))
+    .catch(error => console.error("Error al realizar la carga del producto", error));
     }
 ,[id]);
 
